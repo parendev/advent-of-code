@@ -6,7 +6,7 @@
 
 (use-fixtures :each rm/mock-resources-fixture)
 
-(deftest resource-mock
+(deftest ^:general resource-mock
   (testing "resource-mock"
     (rm/mock-resources {"foo" "bar"}
       (is (= (utils/get-resource! "foo") "bar")

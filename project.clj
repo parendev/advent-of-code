@@ -8,4 +8,6 @@
                  [org.clojure/clojure "1.11.1"]
                  [org.clojure/core.async "1.6.681"]
                  [org.clojure/data.json "2.4.0"]]
+  :profiles {:kaocha {:dependencies [[lambdaisland/kaocha "1.87.1366"]]}}
+  :aliases {"kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
   :repl-options {:init-ns advent-of-code.core})

@@ -47,6 +47,26 @@ You can test this by evaluating `(+ 1 1)` which should return `2`.
 4. Call the main function
     * `(-main)`
 
+## Running Tests
+
+To run all tests, run the following command in your terminal:
+
+```shell
+lein kaocha
+```
+
+To run tests for just a specific year, use a command like:
+
+```shell
+lein kaocha --focus-meta :2023
+```
+
+To profile test performance, run:
+
+```shell
+lein kaocha --plugin kaocha.plugin/profiling
+```
+
 ## License
 
 Copyright © 2023 ParenDev

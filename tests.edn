@@ -1,0 +1,5 @@
+#kaocha/v1
+{:tests [{:id :all
+          :test-paths ["test"]
+          :ns-patterns [".*"]}]
+ :randomize? false}
